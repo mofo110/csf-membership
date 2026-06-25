@@ -46,8 +46,8 @@ EMAIL_PASS=<your_email_app_password>
 ```bash
 node get-csf-membership.js
 <p style="text-align: center;">Click Here
-Subject: CSF Membership is CLOSE!!!
+Subject: CSF Membership is CLOSED :(
 Text: No link found.
-◇ injected env (2) from .env // tip: ⌘ override existing { override: true }
+◇ injected env (3) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
 Email sent: 250 OK , completed
 ```
