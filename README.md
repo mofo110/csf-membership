@@ -33,11 +33,12 @@ cd csf-membership
 npm install
 ```
 
-### Step 3: Create .env file with Yahoo email username and password.
+### Step 3: Create .env file with email service, username and password.
 ```bash
 # .env
-EMAIL_USER=<your_yahoo_email>
-EMAIL_PASS=<your_yahoo_app_password>
+EMAIL_SERVICE=<your_email_service>
+EMAIL_USER=<your_email_id>
+EMAIL_PASS=<your_email_app_password>
 ```
 
 ### Step 4: Execute to get CSF Membership Link.

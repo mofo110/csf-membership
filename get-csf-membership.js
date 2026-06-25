@@ -51,11 +51,12 @@ function getLink(clickHere) {
     const regex = new RegExp(/href="(.*?)"/);
     const match = regex.exec(clickHere.replaceAll('\n', ''));
 
-    let subject = 'CSF Membership is CLOSE!!!'
+    // Default to CLOSED and NO LINK FOUND
+    let subject = 'CSF Membership is CLOSED :('
     let text = 'No link found.';
 
     if (match) {
-        subject = 'CSF Membership is OPEN!!!'
+        subject = 'CSF Membership is OPEN :)'
         text = match[1].trim();
     }
     
@@ -69,7 +70,7 @@ function email(subject, text) {
     require('dotenv').config();
     const nodemailer = require('nodemailer');
     const transporter = nodemailer.createTransport({
-        service: 'Yahoo',
+        service: process.env.EMAIL_SERVICE,
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS
