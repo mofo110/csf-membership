@@ -35,7 +35,6 @@ function getCSFMembership() {
 
 function getData(data) {
     const regex = new RegExp(/<h1>Interested in becoming a member\?<\/h1>(.*?)<\/p>/);
-    //const regex = new RegExp(/<h2>Renewal Information<\/h2>(.*?)<\/p>/);
     const match = regex.exec(data.replaceAll('\n', ''));
 
     if (match) {
